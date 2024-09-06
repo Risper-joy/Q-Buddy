@@ -1,0 +1,57 @@
+<!-- Save this file as templates/login_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            const name = document.getElementById('name').value;
+            const regNumber = document.getElementById('registration_number').value;
+            const institution = document.getElementById('institution').value;
+
+            // Send form data to the server
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    registration_number: regNumber,
+                    institution: institution
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("response").innerText = data.message;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                document.getElementById("response").innerText = 'Error processing login';
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>User Login Form</h1>
+
+    <form id="login_form" onsubmit="submitForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="registration_number">Registration Number:</label>
+        <input type="text" id="registration_number" name="registration_number" required><br>
+
+        <label for="institution">Institution:</label>
+        <input type="text" id="institution" name="institution" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="response">Server response will appear here.</p>
+</body>
+</html>
