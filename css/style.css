@@ -1,0 +1,137 @@
+:root{
+    --color-primary: #59a646;
+    --color-danger: #b30808;
+    --color-success: #1b9c85;
+    --color-warning: #f7d060;
+    --color-white: #fff;
+    --color-info-dark: #7d8dai;
+    --color-dark: #363949;
+    --color-light: #848bc846;
+    --color-background: #f6f6f9;
+    --color-dark-variant: #677483;
+
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+*{
+    margin: 0.5vh;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: var(--color-primary);
+}
+
+h1{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+
+}
+
+h3{
+    font-weight: 400;
+    font-size: 0.87rem;
+}
+
+p{
+    color: var(--color-dark);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.index-container{
+    display: grid;
+    width: 98%;
+    margin: 0 auto;
+    gap: 1rem;
+    grid-template-columns: 10rem auto 25rem;
+    color: var(--color-dark-variant);
+}
+
+.index-subcontainer{
+    width: 100vh;
+    height: 100vh;
+
+}
+
+.index-subcontainer a{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    height: 58rem;
+    gap: 1rem;
+    position: absolute;
+    margin-left: 0.1rem;
+    transition: all 0.3s ease;
+}
+
+.p-welcome{
+    display: flex;
+    align-items: center;
+    color: var(--color-dark);
+    height: 100%;
+    width: fit-content;
+    gap: 1rem;
+    position: absolute;
+    margin-left: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.index-toggle{
+    display: flex;
+    align-items: center;
+}
+
+.welcome-index{
+    position: flex;
+    width: auto;
+    height: 100vh;
+}
+
+.index-button{
+    display: flex;
+    place-items: left;
+    justify-content: left;
+
+}
+
+.buttonish{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    justify-content: center;
+    border: var(--card-border-radius);
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    margin-top: 28rem;
+}
+
+.buttonish:hover{
+    cursor: pointer;    
+}
