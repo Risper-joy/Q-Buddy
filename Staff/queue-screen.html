@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/queuescreen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Q-Buddy - Queue List</title>
+</head>
+<body>
+    <div class="container-1">
+        <aside>
+            <div class="index-container">
+                <a class="index-toggle" href="index.html">
+                    <div class="logo">
+                        <h2>Q-<span class="danger">BUDDY</span></h2>
+                    </div>
+                </a> 
+            </div>                  
+            <nav class="sidebar">
+             <a href="dashboard.html" target="_parent">Dashboard</a>
+                    
+             <a href="queue-list.html" target="_parent">Queue List</a>
+                     
+             <a href="queue-screen.html" target="_parent">Queue Screen</a>
+                     
+             <a href="skipped.html" target="_parent">Skipped</a>
+                     
+             <a href="deffered.html" target="_parent">Deferred</a>
+
+             <a href="" target="_parent"><sub>Q-Buddy for staff</sub></a>
+            </nav>             
+         </aside> 
+        <main>
+            <div class="dash-container">
+                <h2>Queue Screen</h2>
+            </div>
+    
+            <div class="list-content">
+                <section>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="board board-body bg-primary text-white mb-3">
+                                <div class="list-details">
+                                    <div>
+                                        <div class="status">
+                                            <div class="queue-list">
+                                                <div class="ticket">
+                                                    <h3>Current Ticket Number</h3>
+                                                    <h2>GC-003</h2>
+                                                </div>
+                                                <div class="screen-button">
+                                                    <form action="status.html" method="get" target="_self">
+                                                        <button class="buttonish3" role="button">Done</button>
+                                                    </form>
+                                                    <form action="status.html" method="get" target="_self">
+                                                        <button class="buttonish3" role="button">Skip</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="section2">
+                        <h3>Next in queue is: </h3>
+                    <h2>GC-004</h2>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
