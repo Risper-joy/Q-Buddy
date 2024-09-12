@@ -30,10 +30,9 @@ body{
     height: fit-content;
     font-size: 0.88rem;
     font-family: sans-serif;
-    user-select: none;
-    overflow: hidden;
-    color: var(--color-dark);
-    background-color: var(--color-background);
+    user-select: none !important;
+    color: var(--color-dark) !important;
+    background-color: var(--color-background) !important;
 }
 
 *{
@@ -52,14 +51,14 @@ h1{
 }
 
 h2{
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-weight: 600 !important;
+    font-size: 1.4rem !important;
 
 }
 
 h3{
-    font-weight: 400;
-    font-size: 0.87rem;
+    font-weight: 400 !important;
+    font-size: 0.87rem !important;
 }
 
 a{
@@ -94,7 +93,7 @@ aside .index-toggle{
 
 sub {
     vertical-align: sub;
-    font-size: 2px;
+    font-size: 12px !important;
   }
 
 aside .index-toggle{
@@ -170,6 +169,10 @@ aside .sidebar a:last-child{
     width: 100%;
 }
 
+aside .sidebar a:last-child:hover{
+    background-color: #f1f1f1 !important;
+}
+
 
 @media screen and (max-width: 900px) {
     aside .sidebar {
@@ -212,12 +215,12 @@ main .dash-container{
 }
 
 main .list-details > div{
-    background-color: var(--color-white);
-    padding: var(--card-padding);
-    
+    background-color: var(--color-white) !important;
+    padding: var(--card-padding) !important;
+    border-radius: var(--card-border-radius) !important;
     margin-top: 1rem;
     width: 90rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow) !important;
     cursor: auto;
     display: flex;
     flex-direction: column;
@@ -246,6 +249,7 @@ main .list-details > div{
     margin: 8px;
     padding: 4px;
     justify-content: center;
+    border-radius: var(--border-radius-1);
     background-color: var(--color-primary);
 
 }

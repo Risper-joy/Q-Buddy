@@ -31,7 +31,6 @@ body{
     font-size: 0.88rem;
     font-family: sans-serif;
     user-select: none;
-    overflow: hidden;
     color: var(--color-dark);
     background-color: var(--color-background);
 }
@@ -73,6 +72,11 @@ p{
 .danger{
     color: var(--color-danger);
 }
+
+sub {
+    vertical-align: sub;
+    font-size: 12px !important;
+  }
 
 aside{
     height: 100vh;
@@ -160,6 +164,10 @@ aside .sidebar a:last-child{
     width: 100%;
 }
 
+aside .sidebar a:last-child:hover{
+    background-color: #f1f1f1 !important;
+}
+
 
 @media screen and (max-width: 900px) {
     aside .sidebar {
@@ -204,7 +212,7 @@ main .dash-container{
 main .list-details > div{
     background-color: var(--color-white);
     padding: var(--card-padding);
-    
+    border-radius: var(--card-border-radius);
     margin-top: 1rem;
     width: 90rem;
     box-shadow: var(--box-shadow);

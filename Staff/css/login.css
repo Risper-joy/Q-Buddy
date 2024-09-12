@@ -1,0 +1,30 @@
+:root{
+    --color-primary: #59a646;
+    --color-danger: #b30808;
+    --color-success: #1b9c85;
+    --color-warning: #f7d060;
+    --color-white: #fff;
+    --color-info-dark: #7d8dai;
+    --color-dark: #363949;
+    --color-light: #848bc846;
+    --color-background: #f6f6f9;
+    --color-dark-variant: #677483;
+
+}
+
+.button3{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+ }
+
+ sub{
+    font-size: smaller;
+ }
+
+ a{
+    color: var(--color-primary);
+ }
+
+ .link{
+    color: var(--color-primary);
+ }
