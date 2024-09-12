@@ -9,21 +9,23 @@
 </head>
 <body>
     <div class="index-container">
-        <a class="index-toggle" href="index.html">
+        <a class="index-toggle" href="dashboard.html">
             <div class="logo">
                 <h2>Q-<span class="danger">BUDDY</span></h2>
             </div>
         </a>
         <div class="index-subcontainer">
-            <p class="p-welcome">Welcome to Q-Buddy, Your virtual queue assistant.</p>
-
-            <div class="index-button">
-                <form action="dashboard.html" method="get" target="_self">
-                    <button class="buttonish" role="button">Dashboard</button>
+            <div class="p-welcome">
+                <h1>Welcome to Q-Buddy</h1>
+            <h3>Your virtual queuing assistant</h3>
+            <div class="button-container">
+                <form action="/handle_button_click" method="POST">
+                    <button type="submit" name="action" value="register" class="button">Register</button>
+                    <button type="submit" name="action" value="join_remotely" class="button">Join Remotely</button>
                 </form>
             </div>
+            </div>
         </div>
-    </div>
 
 </body>
 </html>
