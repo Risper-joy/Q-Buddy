@@ -21,7 +21,7 @@ body{
     height: fit-content;
     font-size: 0.88rem;
     user-select: none;
-    overflow: hidden;
+    
     color: var(--color-dark);
     background-color: var(--color-background);
 }
@@ -76,18 +76,21 @@ p{
 .index-subcontainer{
     width: 100vh;
     height: 100vh;
-
+    background-image: url("/images/tickets.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100;
 }
 
-.index-subcontainer a{
-    display: flex;
+.index-subcontainer button{
+    display: inline;
+    color: var(--color-dark);
+    height: 3rem;
+    width: 4rem;
     align-items: center;
-    color: var(--color-primary);
-    height: 58rem;
     gap: 1rem;
-    position: absolute;
-    margin-left: 0.1rem;
-    transition: all 0.3s ease;
+    background-color: var(--color-primary);
+
 }
 
 .p-welcome{
@@ -120,7 +123,7 @@ p{
 
 }
 
-.buttonish{
+.button{
     width: 100%;
     padding: 12px;
     margin: 8px 0;
@@ -129,9 +132,8 @@ p{
     border: var(--card-border-radius);
     box-sizing: border-box;
     background-color: var(--color-primary);
-    margin-top: 28rem;
 }
 
-.buttonish:hover{
+.button:hover{
     cursor: pointer;    
 }
