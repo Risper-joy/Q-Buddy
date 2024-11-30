@@ -31,7 +31,6 @@ body{
     font-size: 0.88rem;
     font-family: sans-serif;
     user-select: none;
-    overflow: hidden;
     color: var(--color-dark);
     background-color: var(--color-background);
 }
